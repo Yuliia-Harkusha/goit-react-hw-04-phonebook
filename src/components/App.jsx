@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { nanoid } from 'nanoid';
@@ -14,7 +14,6 @@ import {
   SearchInput,
   DefaultText,
 } from './App.styled';
-import { useEffect } from 'react';
 
 export const App = () => {
   const [contacts, setContacts] = useState(() => {
